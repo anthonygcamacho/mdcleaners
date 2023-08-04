@@ -3,5 +3,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Home Page";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h1>Home</h1>
+  <section id="about">
+    <h1>Veteran owned Cleaning Service</h1>
+    <div>
+      <p>We made up of Active Military, Military Veterans, and member of the Disabled Community, working together provide a quality cleaning service.</p>
+    </div>
+  </section>
+  <section id="services">
+    <h2>Services</h2>
+    <div>
+      <p>We can clean your home or facility.</p>
+      <p>Click the button below to learn more about the types of cleaning services we provide.</p>
+      <a href="/services">Learn More</a>
+    </div>
+  </section>
+  <!-- <section id="testimonials"></section> -->
 </BaseLayout>
