@@ -2,15 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
     body {
         @apply bg-[#999;]
     }
-}
-
-
-/* @layer components {
-    .bg-green {
-        @apply bg-green-700;
-    }
 } */
+
+@layer components {
+    .nav-links-li {
+        @apply pl-2 my-2 lg:my-0 lg:pl-10 lg:pr-0;
+    }
+    .nav-links {
+        @apply p-0 text-sky-700 text-lg font-bold hover:text-sky-600 focus:text-sky-700 [&.active]:text-sky-700;
+    }
+    /* .nav-links {
+        @apply p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400;
+    } */
+}
