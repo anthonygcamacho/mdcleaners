@@ -1,21 +1,27 @@
 ---
 // import '../styles/global.css';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import BlogPost from '../components/BlogPost.astro';
-const allPosts = await Astro.glob('../pages/locations/*.astro');
+// import BlogPost from '../components/BlogPost.astro';
+// const allPosts = await Astro.glob('../pages/locations/*.astro');
 const pageTitle = "Locations";
 
-console.log(allPosts[0])
-console.log(allPosts[0].url)
-console.log(allPosts[0].file)
+// console.log(allPosts[0])
+// console.log(allPosts[0].url)
+// console.log(allPosts[0].file)
 ---
 
 
 <BaseLayout pageTitle={pageTitle}>
   <section class="page-header">
-    <h1 class="h1-default">Locations!</h1>
+    <h1 class="h1-default">{pageTitle}</h1>
   </section>
-    <ul>
+
+  <section class="mb-20 text-center">
+    <div>
+      <div class="max-w-2xl px-5 mx-auto my-0">Currently providing home and facility cleaning services for all of San Diego County.</div>
+    </div>
+  </section>
+    <!-- <ul>
       {allPosts.map((post) => <BlogPost url={post.url} title="San diego" />)}
-    </ul>
+    </ul> -->
 </BaseLayout>
