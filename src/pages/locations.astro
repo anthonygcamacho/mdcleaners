@@ -12,8 +12,10 @@ console.log(allPosts[0].file)
 
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Locations!</h2>
-  <ul>
-    {allPosts.map((post) => <BlogPost url={post.url} title="San diego" />)}
-  </ul>
+  <section class="page-header">
+    <h1 class="h1-default">Locations!</h1>
+  </section>
+    <ul>
+      {allPosts.map((post) => <BlogPost url={post.url} title="San diego" />)}
+    </ul>
 </BaseLayout>

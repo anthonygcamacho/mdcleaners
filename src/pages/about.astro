@@ -5,8 +5,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h1>{pageTitle}</h1>
-  <p>We are a Military Veteran owned business, teaming up members of the disabled community, to provide a high quality cleaning service for your home or facility.</p>
-  <p>Based out of San Diego, we are in the process of creating a way for our services to expand country wide.
-  </p>
+  <section class="page-header">
+    <h1 class="h1-default">{pageTitle}</h1>
+  </section>
+    <p>We are a Military Veteran owned business, teaming up members of the disabled community, to provide a high quality cleaning service for your home or facility.</p>
+    <p>Based out of San Diego, we are in the process of creating a way for our services to expand country wide.
+    </p>
 </BaseLayout>

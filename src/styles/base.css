@@ -15,6 +15,15 @@
     .nav-links {
         @apply p-0 text-sky-700 text-lg font-bold hover:text-sky-600 focus:text-sky-700 [&.active]:text-sky-700;
     }
+    .h1-default {
+        @apply text-3xl font-bold;
+    }
+    .h2-default {
+        @apply text-xl font-bold;
+    }
+    .page-header {
+        @apply p-10 text-center;
+    }
     /* .nav-links {
         @apply p-0 text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400;
     } */

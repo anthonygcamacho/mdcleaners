@@ -5,24 +5,54 @@ const pageTitle = "Cleaning Services";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h1>{pageTitle}</h1>
+  <section class="page-header">
+    <h1 class="h1-default">{pageTitle}</h1>
+  </section>
 
-  <div>
-    <h2>Homes</h2>
-    <div>
-      <p><span>Types of cleaning:</span> Dusting, Stain removal, Mold removal, Mopping, Trash</p>
-      <p><span>Spaces we clean:</span> Living room, Kitchen, Bathroom, Hallways</p>
-      <p><span>Please note:</span> If the home is vacant, we don't enter into bedrooms. We only clean bedrooms unoccupied homes.</p>
-    </div>
-  </div>
+  <section class="mb-20 text-center">
+    <div class="max-w-lg mx-auto my-0">
+      <h2 class="h2-default">Homes</h2>
+      <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+              <table class="min-w-full text-sm font-light text-center">
+                <tbody>
+                  <tr>
+                    <td class="py-2 pl-2 pr-1 font-bold text-right align-top bold whitespace-nowrap">Types of cleaning:</td>
+                    <td colspan="3" class="py-2 pl-1 pr-2 text-left align-top whitespace">Dusting, Stain removal, Mold removal, Mopping, Trash</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 pl-2 pr-1 font-bold text-right align-top whitespace-nowrap">Spaces we clean:</td>
+                    <td colspan="3" class="py-2 pl-1 pr-2 text-left align-top whitespace">Living room, Kitchen, Bathroom, Hallways</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 pl-2 pr-1 font-bold text-right align-top whitespace-nowrap">Price:</td>
+                    <td colspan="3" class="py-2 pl-1 pr-2 text-left align-top whitespace">$30 per hour.<br />If mold exists, $10 extra per hour is charged.<br />Tips are welcome.</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2 pl-2 pr-1 font-bold text-right align-top whitespace-nowrap">Please note:</td>
+                    <td colspan="3" class="py-2 pl-1 pr-2 text-left align-top whitespace">
+                      If the home is vacant, we don't enter into bedrooms.<br />We only clean bedrooms unoccupied homes.<br />Mold is charged extra.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
 
-  <div>
-    <h2>Facilities</h2>
-    <div>
-      <p><span>Types of cleaning:</span> Dusting, Stain removal, Mold removal, Mopping, Trash</p>
-      <p><span>Spaces we clean:</span> Living room, Kitchen, Bathroom, Hallways</p>
-      <p><span>Please note:</span> If the home is vacant, we don't enter into bedrooms. We only clean bedrooms unoccupied homes.</p>
+  <!-- <section class="text-center">
+    <div class="mx-auto my-0">
+      <h2 class="h2-default">Facilities</h2>
+      <div class="text-left">
+        <p class=""><span class="w-[130px] inline-block">Types of cleaning:</span> <span class="w-[130px] inline-block">Dusting, Stain removal, Mold removal, Mopping, Trash</span></p>
+        <p class=""><span class="w-[130px] inline-block">Spaces we clean:</span> <span class="w-[130px] inline-block">Living room, Kitchen, Bathroom, Hallways</span></p>
+        <p class=""><span class="w-[130px] inline-block">Please note:</span> <span class="w-[130px] inline-block">If the home is vacant, we don't enter into bedrooms. We only clean bedrooms unoccupied homes</span>.</p>
+      </div>
     </div>
-  </div>
+  </section> -->
 
 </BaseLayout>
